@@ -102,6 +102,7 @@ def menu():
     contato(dados)
     prox = input("Digite: \n1 - Para encerrar \n2 - Para voltar ao menu \n3 - Para novo cadastro\n")
     if prox == "1":
+      print("A Salesforce agradece!")
       break
     elif prox == "2":
       menu_completo()

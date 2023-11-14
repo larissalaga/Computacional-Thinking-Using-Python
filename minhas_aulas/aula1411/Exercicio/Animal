@@ -1,0 +1,30 @@
+class Animal:
+  def __init__(self, nome=None, especie=None):
+    print('Funciona')
+    self.nome = nome
+    self.especie = especie
+
+  def emitir_som(self):
+    print('late')
+
+  def descrever():
+    print(f'{self.nome}, é da espécie: {self.especie}') 
+
+class Cachorro(Animal):
+  def __init__(self, raca=None):
+    self.raca = raca
+    super().__init__()
+
+  def latir(self):
+    return "Au au"
+    
+  def emitir_som(self):
+    print(f'{self.nome} está flando {self.latir()}')
+
+
+a1 = Cachorro('border collie')
+a1.nome = 'Perséfone'
+a1.especie = 'Canina'
+a1.emitir_som()
+a1.descrever()
+
